@@ -83,6 +83,11 @@ and it avoids the need for labeled training data or an LLM API key.
 4. **Alias normalization** — the taxonomy maps many surface forms (`ml`,
    `machine learning`) to one canonical name (`Machine Learning`), so
    downstream matching logic only has to deal with canonical labels.
+5. **Fuzzy typo correction** — tokens that don't exactly match the taxonomy
+   are checked against it using `difflib` sequence matching (threshold 0.82).
+   This catches typos like "Pythom" → Python without needing a trained
+   spellchecker. Every correction is logged and returned, so it's visible
+   and explainable rather than a silent guess.
 
 ### Part 2 — Matching (`resume_parser.py`, `matcher.py`)
 
@@ -107,6 +112,13 @@ and it avoids the need for labeled training data or an LLM API key.
    The weighted blend keeps the score mostly driven by _explainable_
    skill overlap, while still benefiting a little from broader textual
    relevance.
+
+5. **Must-have vs. nice-to-have weighting** — each job role's required
+   skills are split into `must_have` and `nice_to_have` sets. A candidate's
+   match score is 75% driven by must-have coverage and 25% by nice-to-have
+   coverage, so missing a core requirement hurts the score more than
+   missing a bonus skill — this better reflects how a real recruiter would
+   weigh a candidate.
 
 ## Technologies Used
 
@@ -159,10 +171,7 @@ Run `python matcher.py` or the test suite for live output.
 
 - Expand the taxonomy and job-role bank (currently curated by hand;
   could be extended with a larger, community-maintained skills ontology).
-- Add fuzzy string matching (e.g. edit distance) to catch typos or unseen
-  spelling variants that aren't in the alias map.
-- Weight required skills within a job role differently (e.g. "must-have"
-  vs. "nice-to-have") instead of treating every required skill equally.
+
 - Add a lightweight statistical NER model (e.g. spaCy) as a secondary
   extractor to catch skills/technologies outside the fixed taxonomy,
   falling back to the taxonomy for canonicalization.
