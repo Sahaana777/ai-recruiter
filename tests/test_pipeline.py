@@ -1,6 +1,6 @@
 """
 Simple smoke tests for the extraction and matching pipeline.
-Run with:  python -m pytest tests/  (or just: python tests/test_pipeline.py)
+Run with:  python -m pytest tests/
 """
 
 from resume_parser import parse_resume
@@ -63,6 +63,13 @@ def test_resume_jd_matching():
     result = match_candidate_to_jd(resume_text, jd_text)
     assert 0 <= result["overall_match_score"] <= 100
     assert "Python" in result["matched_requirements"]
+
+
+def test_fuzzy_typo_correction():
+    result = extract_entities("I know Pythom and Dockr well")
+    assert "Python" in result["language"]
+    assert "Docker" in result["technology"]
+    assert any(c["matched"] == "Python" for c in result["corrections"])
 
 
 if __name__ == "__main__":
