@@ -1,0 +1,20 @@
+Job Title: Machine Learning Engineer
+
+We are looking for a Machine Learning Engineer with a strong foundation in
+Python and deep learning. The ideal candidate has experience with
+TensorFlow or PyTorch, has worked on natural language processing or
+computer vision projects, and is comfortable deploying models with
+Docker on AWS. Experience with FastAPI for serving models and SQL for
+working with data pipelines is a strong plus.
+
+Responsibilities:
+- Design, train, and evaluate machine learning and deep learning models.
+- Build and maintain REST APIs to serve models in production.
+- Collaborate with data engineers on data pipelines and feature stores.
+- Deploy and monitor models using Docker and cloud infrastructure (AWS).
+
+Requirements:
+- Strong Python programming skills.
+- Experience with TensorFlow, PyTorch, and Scikit-learn.
+- Understanding of NLP or Computer Vision techniques.
+- Familiarity with SQL and REST API design.

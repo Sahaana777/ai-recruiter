@@ -1,0 +1,58 @@
+{
+  "Machine Learning Engineer": {
+    "must_have": ["Machine Learning", "Python", "Deep Learning"],
+    "nice_to_have": ["TensorFlow", "PyTorch", "Scikit-learn", "NumPy", "Pandas"]
+  },
+  "NLP Engineer": {
+    "must_have": ["Natural Language Processing", "Python", "Deep Learning"],
+    "nice_to_have": ["Hugging Face", "BERT", "Transformer", "LangChain"]
+  },
+  "Computer Vision Engineer": {
+    "must_have": ["Computer Vision", "Python", "Deep Learning"],
+    "nice_to_have": ["OpenCV", "CNN", "YOLO", "PyTorch", "TensorFlow"]
+  },
+  "Data Scientist": {
+    "must_have": ["Data Science", "Machine Learning", "Python"],
+    "nice_to_have": ["Data Analysis", "Pandas", "NumPy", "Statistics", "SQL"]
+  },
+  "Data Analyst": {
+    "must_have": ["Data Analysis", "SQL"],
+    "nice_to_have": ["Data Visualization", "Excel", "Tableau", "Power BI", "Python"]
+  },
+  "Data Engineer": {
+    "must_have": ["Data Engineering", "SQL", "Python"],
+    "nice_to_have": ["Spark", "Hadoop", "Kafka", "AWS"]
+  },
+  "Backend Developer": {
+    "must_have": ["Backend Development", "SQL"],
+    "nice_to_have": ["Python", "Java", "FastAPI", "Django", "REST API", "MongoDB", "PostgreSQL"]
+  },
+  "Frontend Developer": {
+    "must_have": ["Frontend Development", "JavaScript"],
+    "nice_to_have": ["TypeScript", "React", "Angular", "Vue", "HTML/CSS"]
+  },
+  "Full Stack Developer": {
+    "must_have": ["Full Stack Development", "JavaScript", "SQL"],
+    "nice_to_have": ["React", "Node.js", "Python", "REST API", "MongoDB"]
+  },
+  "DevOps Engineer": {
+    "must_have": ["DevOps", "Docker", "Linux"],
+    "nice_to_have": ["Kubernetes", "AWS", "CI/CD", "Git"]
+  },
+  "Cloud Engineer": {
+    "must_have": ["Cloud Computing", "Linux"],
+    "nice_to_have": ["AWS", "Azure", "GCP", "Docker", "Kubernetes"]
+  },
+  "Software Engineer": {
+    "must_have": ["Software Engineering", "Git"],
+    "nice_to_have": ["Python", "Java", "C++", "REST API", "SQL"]
+  },
+  "MLOps Engineer": {
+    "must_have": ["MLOps", "Machine Learning", "Python"],
+    "nice_to_have": ["Docker", "Kubernetes", "AWS", "CI/CD"]
+  },
+  "Mobile App Developer": {
+    "must_have": ["Mobile Development"],
+    "nice_to_have": ["Kotlin", "Swift", "Dart", "React", "REST API"]
+  }
+}

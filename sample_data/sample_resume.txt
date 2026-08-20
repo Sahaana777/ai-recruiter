@@ -1,0 +1,22 @@
+John Doe
+Aspiring Machine Learning Engineer
+
+Summary
+I am a final-year AI/ML student with hands-on experience building deep
+learning models and deploying them to the cloud.
+
+Experience
+- Interned at a startup where I worked with Python and built CNN based
+  image classification models using TensorFlow and PyTorch.
+- Built a natural language processing pipeline for sentiment analysis
+  using Hugging Face and BERT.
+- Used Pandas and NumPy for data analysis and Matplotlib for
+  visualizations.
+- Deployed models using Docker and AWS, and used Git/GitHub for version
+  control.
+- Familiar with SQL for database queries and FastAPI for building REST
+  APIs around trained models.
+
+Education
+B.Tech in Computer Science, focused on Artificial Intelligence and
+Machine Learning.
