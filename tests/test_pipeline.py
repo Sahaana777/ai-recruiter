@@ -3,14 +3,14 @@ Simple smoke tests for the extraction and matching pipeline.
 Run with:  python -m pytest tests/  (or just: python tests/test_pipeline.py)
 """
 
+from resume_parser import parse_resume
+from matcher import extract_candidate_profile, match_candidate_to_jd, suggest_job_roles
+from extractor import extract_entities
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from extractor import extract_entities
-from matcher import extract_candidate_profile, match_candidate_to_jd, suggest_job_roles
-from resume_parser import parse_resume
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -40,7 +40,8 @@ def test_multi_entity_sentence():
 
 
 def test_empty_input():
-    assert extract_entities("") == {"skill": [], "technology": [], "language": []}
+    assert extract_entities("") == {"skill": [], "technology": [
+    ], "language": [], "corrections": []}
 
 
 def test_resume_parsing_and_role_suggestion():
