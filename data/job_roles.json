@@ -1,11 +1,11 @@
 {
   "Machine Learning Engineer": {
     "must_have": ["Machine Learning", "Python", "Deep Learning"],
-    "nice_to_have": ["TensorFlow", "PyTorch", "Scikit-learn", "NumPy", "Pandas"]
+    "nice_to_have": ["TensorFlow", "PyTorch", "Scikit-learn", "NumPy", "Pandas", "MLflow"]
   },
   "NLP Engineer": {
     "must_have": ["Natural Language Processing", "Python", "Deep Learning"],
-    "nice_to_have": ["Hugging Face", "BERT", "Transformer", "LangChain"]
+    "nice_to_have": ["Hugging Face", "BERT", "Transformer", "LangChain", "spaCy", "NLTK"]
   },
   "Computer Vision Engineer": {
     "must_have": ["Computer Vision", "Python", "Deep Learning"],
@@ -21,7 +21,7 @@
   },
   "Data Engineer": {
     "must_have": ["Data Engineering", "SQL", "Python"],
-    "nice_to_have": ["Spark", "Hadoop", "Kafka", "AWS"]
+    "nice_to_have": ["Spark", "Hadoop", "Kafka", "AWS", "Airflow"]
   },
   "Backend Developer": {
     "must_have": ["Backend Development", "SQL"],
@@ -29,19 +29,23 @@
   },
   "Frontend Developer": {
     "must_have": ["Frontend Development", "JavaScript"],
-    "nice_to_have": ["TypeScript", "React", "Angular", "Vue", "HTML/CSS"]
+    "nice_to_have": ["TypeScript", "React", "Angular", "Vue", "HTML/CSS", "Tailwind CSS"]
   },
   "Full Stack Developer": {
     "must_have": ["Full Stack Development", "JavaScript", "SQL"],
-    "nice_to_have": ["React", "Node.js", "Python", "REST API", "MongoDB"]
+    "nice_to_have": ["React", "Node.js", "Python", "REST API", "MongoDB", "Next.js"]
   },
   "DevOps Engineer": {
     "must_have": ["DevOps", "Docker", "Linux"],
-    "nice_to_have": ["Kubernetes", "AWS", "CI/CD", "Git"]
+    "nice_to_have": ["Kubernetes", "AWS", "CI/CD", "Git", "Terraform", "Ansible", "Jenkins"]
+  },
+  "Site Reliability Engineer": {
+    "must_have": ["Site Reliability Engineering", "Linux"],
+    "nice_to_have": ["Kubernetes", "Docker", "AWS", "CI/CD", "Terraform"]
   },
   "Cloud Engineer": {
     "must_have": ["Cloud Computing", "Linux"],
-    "nice_to_have": ["AWS", "Azure", "GCP", "Docker", "Kubernetes"]
+    "nice_to_have": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform"]
   },
   "Software Engineer": {
     "must_have": ["Software Engineering", "Git"],
@@ -49,10 +53,46 @@
   },
   "MLOps Engineer": {
     "must_have": ["MLOps", "Machine Learning", "Python"],
-    "nice_to_have": ["Docker", "Kubernetes", "AWS", "CI/CD"]
+    "nice_to_have": ["Docker", "Kubernetes", "AWS", "CI/CD", "MLflow"]
   },
   "Mobile App Developer": {
     "must_have": ["Mobile Development"],
-    "nice_to_have": ["Kotlin", "Swift", "Dart", "React", "REST API"]
+    "nice_to_have": ["Kotlin", "Swift", "Dart", "React", "REST API", "Objective-C"]
+  },
+  "Cybersecurity Analyst": {
+    "must_have": ["Cybersecurity", "Network Security"],
+    "nice_to_have": ["Ethical Hacking", "Penetration Testing", "Linux", "Python"]
+  },
+  "QA / Test Engineer": {
+    "must_have": ["QA/Testing"],
+    "nice_to_have": ["Selenium", "Pytest", "JUnit", "Postman", "Python", "Java"]
+  },
+  "UI/UX Designer": {
+    "must_have": ["UI/UX Design"],
+    "nice_to_have": ["Figma", "Adobe XD", "Graphic Design", "HTML/CSS"]
+  },
+  "Product Manager": {
+    "must_have": ["Product Management"],
+    "nice_to_have": ["Agile/Scrum", "Business Analysis", "Data Analysis", "SQL"]
+  },
+  "Business Analyst": {
+    "must_have": ["Business Analysis"],
+    "nice_to_have": ["Data Analysis", "SQL", "Excel", "Tableau", "Power BI"]
+  },
+  "Blockchain Developer": {
+    "must_have": ["Blockchain Development"],
+    "nice_to_have": ["Solidity", "Ethereum", "Web3.js", "JavaScript", "Solana"]
+  },
+  "Game Developer": {
+    "must_have": ["Game Development"],
+    "nice_to_have": ["Unity", "Unreal Engine", "C++", "C#"]
+  },
+  "Embedded Systems / IoT Engineer": {
+    "must_have": ["Embedded Systems"],
+    "nice_to_have": ["IoT", "Arduino", "Raspberry Pi", "C", "C++", "Robotics"]
+  },
+  "Digital Marketing Specialist": {
+    "must_have": ["Digital Marketing"],
+    "nice_to_have": ["SEO", "Content Writing", "Data Analysis", "Excel"]
   }
 }
